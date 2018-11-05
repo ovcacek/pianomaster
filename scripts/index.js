@@ -22,4 +22,4 @@ for(i=o.length;i--;)o[i].elem!==this||null!=e&&o[i].queue!==e||(o[i].anim.stop(n
  * ovcacek-pianomaster v1.0.0
  * ovcacek.hrad ~ Nov 5th 2018
  */
-!function(){$(document).ready(function(){var t=window.location.href,o=new URL(t),r=o.searchParams.get("v");r&&$("iframe").attr("src","https://www.youtube.com/embed/"+r+"?controls=0&autoplay=1"),$(document).on("submit","form",function(){var t=new URL($("form input").val()),o=t.searchParams.get("v");return window.history.pushState({url:"/?v="+o},"","/?v="+o),$("iframe").attr("src","https://www.youtube.com/embed/"+o+"?controls=0&autoplay=1"),!1})})}();
+!function(){$(document).ready(function(){var t=window.location.href,o=new URL(t),a=o.searchParams.get("v");a&&$("iframe").attr("src","https://www.youtube.com/embed/"+a+"?controls=0&autoplay=1"),$(document).on("submit","form",function(){var t=new URL($("form input").val()),o=t.searchParams.get("v");return window.location.replace("https://ovcacek.github.io/pianomaster/?v="+o),!1})})}();
